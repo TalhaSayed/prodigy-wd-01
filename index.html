@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Restaurant Landing Page</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <nav>
+    <div class="nav-container">
+      <h1 class="logo">Foodies</h1>
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#menu">Menu</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <header id="home">
+    <div class="hero-content">
+      <h1>Welcome to Foodies</h1>
+      <p>Delicious food, great ambiance. Experience the best meals in town.</p>
+      <button id="cta-btn">Reserve a Table</button>
+    </div>
+  </header>
+
+  <!-- Menu Section -->
+  <section id="menu">
+    <div class="container">
+      <h2>Our Menu</h2>
+      <div class="menu-items">
+        <div class="menu-item">
+          <h3>Spaghetti Carbonara</h3>
+          <p>A classic Italian pasta with creamy sauce, pancetta, and cheese.</p>
+          <span>$15.99</span>
+        </div>
+        <div class="menu-item">
+          <h3>Grilled Salmon</h3>
+          <p>Fresh salmon grilled to perfection with a side of vegetables.</p>
+          <span>$19.99</span>
+        </div>
+        <div class="menu-item">
+          <h3>Caesar Salad</h3>
+          <p>Crisp romaine lettuce, parmesan, croutons, and creamy dressing.</p>
+          <span>$9.99</span>
+        </div>
+        <div class="menu-item">
+          <h3>Margherita Pizza</h3>
+          <p>Classic pizza topped with fresh tomatoes, mozzarella, and basil.</p>
+          <span>$12.99</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact">
+    <div class="container">
+      <h2>Contact Us</h2>
+      <form id="contact-form">
+        <input type="text" id="name" placeholder="Your Name" required>
+        <input type="email" id="email" placeholder="Your Email" required>
+        <textarea id="message" placeholder="Your Message" required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+      <div id="form-response" class="hidden"></div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy;          2025 Foodies. All Rights Reserved. </p>
+  </footer>
+
+  <!-- JavaScript -->
+  <script src="script.js"></script>
+</body>
+</html>
